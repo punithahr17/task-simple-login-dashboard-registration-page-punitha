@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/loginScript.js"></script>
+    <title>Login Page</title>
+    <link rel="icon" href="images/login.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="login-container">
+            <div class="gif-container">
+                <img src="./images/login.gif" alt="Login GIF" class="img-fluid" width="80%">
+            </div>
+            <div class="form-container card shadow p-4">
+            <h2 class="text-center">Login</h2>
+            <form class="needs-validation" id="login-Form" novalidate>
+                <hr/>
+                
+                <div class="mb-3 form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="usernameerror invalid-feedback" id="usernameErrormsg">Please enter your username(Eg; Punitha).</div>
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" maxlength="20" required>
+                    <div class="valid-feedback">Looks good!</div>
+                <div class="passworderror invalid-feedback" id="passwordErrormsg">Please Enter valid password.</div>
+                </div><br/>
+
+                <div class="mb-3 form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </div>
+            
+                <div id="loginError" class="text-danger mt-3" style="display:none;">Invalid username or password.Please type the correct username or Password.</div>
+                <div class="mt-3">
+                    <p>Don't have an account? <a href="registration.html">Go to Registration Page</a></p>
+                </div>
+                
+
+            </form>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
